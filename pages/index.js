@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import InputPokemonAPI from './components/InputPokemonAPI'
+import Counter from './components/Counter'
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
        <InputPokemonAPI></InputPokemonAPI>
+       <br/>
+       <Counter></Counter>
       </main>
     </>
   )
