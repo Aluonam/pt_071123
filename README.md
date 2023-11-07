@@ -3,7 +3,7 @@
 Consume una API con algún dato dinámico que tenga que escribir el usuario (cuantos elementos se muestran , el número de imagen , numero de pokemon.. etc)
 
 
-API URL: https://pokeapi.co/ --> usar: https://pokeapi.co/api/v2/pokemon?offset=10&limit=10
+API URL: https://pokeapi.co/ --> usar: https://pokeapi.co/api/v2/pokemon/ditto
 
 
 **Tareas secundarias**
