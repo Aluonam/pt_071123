@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const FirstCapitalLetter = () => {
+    const [dataUser, setDataUser] = useState([])
   return (
-    <div>FirstCapitalLetter</div>
+    <>
+    {dataUser}
+    <input onChange={(e)=>{setDataUser(e.target.value)}}></input>
+    </>
   )
 }
 
