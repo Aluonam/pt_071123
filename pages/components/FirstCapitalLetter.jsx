@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const FirstCapitalLetter = () => {
     const [dataUser, setDataUser] = useState([])
-
+    const [newWords, setNewWords] = useState()
     const firstCapitalLetter = ()=>{
         const copyArr = structuredClone(dataUser);
         const splitWords = copyArr.split(" ");
@@ -14,13 +14,13 @@ const FirstCapitalLetter = () => {
             return(
                 letter.join("")
             )
-            
-        })
+            })
+        setNewWords(goToWords.join(" "))
         console.log(goToWords)
     }
   return (
     <>
-    {dataUser}
+    {newWords}
     <input onChange={(e)=>{setDataUser(e.target.value)}}></input>
     <button onClick={()=>{firstCapitalLetter()}}>convertir primera letra en mayúscula</button>
     </>
