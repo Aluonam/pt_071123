@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import InputPokemonAPI from './components/InputPokemonAPI'
 import Counter from './components/Counter'
+import FirstCapitalLetter from './components/FirstCapitalLetter'
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
        <InputPokemonAPI></InputPokemonAPI>
        <br/>
        <Counter></Counter>
+       <br/>
+       <FirstCapitalLetter></FirstCapitalLetter>
       </main>
     </>
   )
